@@ -79,7 +79,10 @@ Ardublockly.LOCALISED_TEXT = {
                      "Möchtest du diese wirklich löschen?",
   invalidXmlTitle: "Ungültige XML",
   invalidXmlBody: "Die XML-Datei konnte nicht in Blöcke zerlegt werden. Bitte überprüfe den XML-Code und versuche es erneut.",
-  /* Tooltips */
+  copy_paste_mcu: "Kopiere die .BIN Datei auf deine senseBox MCU. <br> <br> Hilfe: Wird die senseBox MCU im Explorer nicht angezeigt mache eine Doppelklick auf den Roten Reset Button.<br>"+
+                  "<img src=\"img/text-gif-0.gif\"> <br>" +
+                  "Benötigst du mehr Information und Hilfe schau ins <a href=\"https://sensebox.github.io/books-v2/blockly/uebersicht/blockly_online.html\">Blockly für senseBox Buch</a>",
+    /* Tooltips */
   uploadingSketch: "Sketch wird übertragen...",
   uploadSketch: "Sketch erfolgreich übertragen!",
   verifyingSketch: "Sketch überprüfen...",

@@ -63,6 +63,7 @@ SenseboxExtension.init = function() {
   document.getElementById("button_copy_clipboard").setAttribute("data-tooltip", Ardublockly.getLocalStr('save_to_clipboard'));
   document.getElementById("button_compile_sketch").setAttribute("data-tooltip", Ardublockly.getLocalStr('compile_sketch'));
 
+
   var compile = document.getElementById('button_compile_sketch');
   compile.addEventListener('click', function () {
     var sketch = Ardublockly.generateArduino();
@@ -78,9 +79,17 @@ SenseboxExtension.init = function() {
         if (request.status == 200) {
           var response = null;
           try {
-            response = JSON.parse(request.response);
-            window.open('https://compiler.sensebox.de/download?id='+response.data.id+'&board='+window.BOARD, '_self');
-            Ardublockly.MaterialToast(Ardublockly.getLocalStr('sketch_compiled'));
+            var openDownload = function () {
+              response = JSON.parse(request.response);
+              window.open('https://compiler.sensebox.de/download?id='+response.data.id+'&board='+window.BOARD, '_self');
+            }
+              Ardublockly.alertMessage(
+              Ardublockly.getLocalStr('sketch_compiled'),
+              Ardublockly.getLocalStr('copy_paste_mcu'),
+              true, openDownload
+            );
+            
+          
           } catch(e) {
             throw e;
           }

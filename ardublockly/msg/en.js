@@ -79,6 +79,8 @@ Ardublockly.LOCALISED_TEXT = {
                      "Are you sure you want to delete them?",
   invalidXmlTitle: "Invalid XML",
   invalidXmlBody: "The XML file was not successfully parsed into blocks. Please review the XML code and try again.",
+  copy_paste_mcu: "Copy the provided .BIN File to the SENSEBOX MCU in your explorer <a img src=\"../img/text-gif-0.gif\"</a>. <br>"+
+                  "more information can be found here <a href=\"https://github.com/carlosperate/ardublockly\">Ardublockly repository</a>",
   /* Tooltips */
   uploadingSketch: "Uploading Sketch into Arduino...",
   uploadSketch: "Upload Sketch to the Arduino",
