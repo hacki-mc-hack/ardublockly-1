@@ -1,33 +1,13 @@
-# Ardublockly
-Ardublockly is a visual programming editor for Arduino. It is based on Google's [Blockly][1], which has been forked to generate [Arduino][15] code.
-
-The `ArdublocklyServer` Python package initialises a local server to be able to compile and load the Arduino code using the [Arduino IDE][2].
-
-This is all packaged in a self contained executable desktop application for Windows, Mac OS X, and Linux.
-
-![Ardublockly desktop program screenshot][desktop_screeshot]
-
+# Blockly for senseBox
+Blockly for senseBox is a visual programming editor for the senseBox:edu. It is based on Google's [Blockly][1] and carlosperates [Ardublockly][2], which has been forked.
 
 ## Features
 * Generates Arduino code with visual drag-and-drop blocks
-* Uploads the code to an Arduino Board
+* online Compiler for the senseBox MCU
 * Useful "code block warnings"
-* Compatible with a wide range of official Arduino Boards
-* Works on Windows / Linux / Mac OS X
+* Works online without Installation and Windows / Linux / Mac OS X (testing purpose only at the moment!)
 
 Ardublockly is still under development and a few features are not yet implemented. A to-do list can be found in the [TODO.md][3] file.
-
-Currently tested under Windows with Python 2.7 and 3.4 and in Linux and MacOS X with Python 2.7.
-
-
-## Cloning the repository
-Please note that there are submodules in the repository that need initialisation. So, to correctly clone the Ardublockly repository:
-
-```
-git clone https://github.com/carlosperate/ardublockly.git
-cd ardublockly
-git submodule update --init --recursive
-```
 
 
 ## Installing
@@ -108,7 +88,7 @@ limitations under the License.
 
 
 [1]: https://developers.google.com/blockly/
-[2]: http://www.arduino.cc/en/main/software/
+[2]: https://github.com/carlosperate/ardublockly
 [3]: TODO.md
 [4]: https://github.com/carlosperate/ardublockly/releases/
 [5]: https://github.com/carlosperate/ardublockly/wiki/Installing-Ardublockly
